@@ -2,7 +2,6 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-
   config.vm.define "db" do |db|
     db.vm.box = "ubuntu/trusty64"
     db.vm.host_name = "postgresql"
