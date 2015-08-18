@@ -17,7 +17,6 @@ Vagrant.configure("2") do |config|
     web.vm.host_name = "webapp"
     web.vm.provision :shell, :path => 'Vagrant-setup/setup-webapp.sh'
     web.vm.network "private_network", ip: "10.0.0.11"
-    web.vm.network "forwarded_port", guest: 8000, host: 8000
+    web.vm.network "forwarded_port", guest: 80, host: 8000
   end
-
 end
