@@ -8,5 +8,5 @@ sudo pip install -r /vagrant/requirements.txt
 
 cd /vagrant/rest_demo
 #python manage.py makemigrations snippets
-python manage.py migrate
-python manage.py runserver 0.0.0.0:80
+#python manage.py migrate
+#python manage.py runserver 0.0.0.0:80
