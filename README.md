@@ -20,3 +20,8 @@ To run the demo:
 8. $ python manage.py createsuperuser
 
 9. $ sudo python manage.py runserver 0.0.0.0:80
+
+On host machine visit http://localhost:8000 in your browser.
+
+Thanks to http://www.django-rest-framework.org/ for the great tutorial which I used to get this example going.
+Also, thanks to https://github.com/jackdb/pg-app-dev-vm for the postgres provisioning script.
