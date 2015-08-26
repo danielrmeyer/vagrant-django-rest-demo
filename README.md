@@ -29,9 +29,10 @@ Also, thanks to https://github.com/jackdb/pg-app-dev-vm for the postgres provisi
 To create a staging environment with aws using this demo:
 
 Do the following pre-steps on your machine:
+```
 $ vagrant plugin install vagrant-aws
 $ vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
-
+```
 I assume you are familier with aws console.  If not spend a bit of time
 generating your keys and and install the aws-cli.
 
