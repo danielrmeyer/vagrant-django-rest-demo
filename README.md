@@ -39,12 +39,12 @@ generating your keys and and install the aws-cli.
 
 2. Create a shell script to set-up your aws stuff:
 
-'''
+```
 export AWS_KEY=###############
 export AWS_SECRET=#############################
 export AWS_KEYNAME="my_key"
 export AWS_KEYPATH=/Users/myname/.secret_folder/test.pem
-'''
+```
 
 3. In the aws console create security groups for your db and webapp
 and modify the vagrantfile to reflect that.  For the db your security
