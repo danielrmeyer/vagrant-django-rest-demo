@@ -15,9 +15,10 @@ Vagrant.configure("2") do |config|
         aws.access_key_id = ENV['AWS_KEY']
         aws.secret_access_key = ENV['AWS_SECRET']
         aws.keypair_name = ENV['AWS_KEYNAME']
-        aws.ami = "ami-4ad94c7a"
+        aws.ami = "ami-af868e9f"
         aws.region = "us-west-2"
         aws.instance_type = "t2.medium"
+        aws.security_groups = ["db_vagrant"]
         override.vm.box = "dummy"
         override.ssh.username = "ubuntu"
         override.ssh.private_key_path = ENV['AWS_KEYPATH']
@@ -36,9 +37,10 @@ Vagrant.configure("2") do |config|
         aws.access_key_id = ENV['AWS_KEY']
         aws.secret_access_key = ENV['AWS_SECRET']
         aws.keypair_name = ENV['AWS_KEYNAME']
-        aws.ami = "ami-4ad94c7a"
+        aws.ami = "ami-af868e9f"
         aws.region = "us-west-2"
         aws.instance_type = "t2.micro"
+        aws.security_groups = ["webapp_vagrant"]
         override.vm.box = "dummy"
         override.ssh.username = "ubuntu"
         override.ssh.private_key_path = ENV['AWS_KEYPATH']
